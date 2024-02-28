@@ -1,0 +1,43 @@
+{
+  "name": "zsh-site-new",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "0.5.6",
+    "@astrojs/markdoc": "^0.9.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "@midudev/tailwind-animations": "^0.0.7",
+    "astro": "4.4.5",
+    "eslinter": "3.2.1",
+    "prettier": "3.2.5",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.3.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "astro",
+      "./node_modules/eslint-config-prettier/index.js",
+      "eslint-config-standard"
+    ],
+    "rules": {
+      "semi": [
+        "error",
+        "always"
+      ],
+      "quotes": [
+        "error",
+        "double"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@fontsource-variable/onest": "^5.0.2"
+  }
+}
