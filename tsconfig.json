@@ -3,7 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@": ["./src/"]
+      "@": ["./src/"],
+      "@/UI/*": ["./src/UI/*"],
+      "@/layouts/*": ["./src/layouts/*"],
+      "@/components/*": ["./src/components/*"],
     }
   }
 }
