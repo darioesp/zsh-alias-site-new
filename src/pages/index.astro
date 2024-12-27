@@ -1,46 +1,19 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { getEntryBySlug } from 'astro:content';
 import Header from '@/components/Header.astro';
 import BgGradient from '@/UI/BgGradient.astro';
 import Main from '@/components/Main.astro';
-
-const entry = await getEntryBySlug('docs', 'code-site-new');
-const { Content } = await entry.render();
 ---
 
 <Layout title="ZSH | site-new" description="Function for ZSH to create a new site with a single command.">
 	<Header />
 	<BgGradient />
 	<Main />
-	<section id="site-new" class="bg-gradient-to-b from-slate-950 via-slate-800 to-black text-white px-4 w-full py-10">
-		<div class="relative max-w-[800px] mx-auto 
-		[&>article>pre]:overflow-x-auto 
-		[&>article>pre]:w-full 
-		[&>article>pre]:border 
-		[&>article>pre]:border-white 
-		[&>article>pre]:rounded-lg 
-		[&>article>pre]:p-5 
-		[&>article>h2]:text-2xl 
-		[&>article>h2]:w-full 
-		[&>article>h2]:text-2xl 
-		[&>article>h2]:text-pretty 
-		[&>article>h2>strong]:text-sky-200 
-		[&>article>h2]:text-center  
-		[&>article>h2]:mb-10 
-		[&>article>h2]:max-w-[80%] 
-		[&>article>h2]:mx-auto 
-		[&>article>h2]:text-slate-200">
-			<button id="copy-code" class="absolute z-10 top-10 right-2 text-sky-100 bg-slate-900 flex px-3 py-2 border border-slate-500/70 mt-20 rounded-lg justify-center items-center gap-2 hover:bg-yellow-500 hover:text-slate-900 transition-all">
-				<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z" /><path d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1" /></svg>
-			</button>
-			<Content />
-		</div>
-	</section>
+	
 	<footer class="w-full flex justify-end px-4">
-		<div id="alert-copy" class="fixed bottom-10 righ-0 p-2 min-w-40 text-center mb-4 text-sm rounded-lg bg-gray-800 text-yellow-300 hidden animate-duration-400" role="alert">
+		<span id="alert-copy" class="fixed bottom-5 left-0 right-0 p-2 min-w-40 text-center mb-4 text-sm rounded-lg bg-cyan-200 text-slate-900 hidden animate-duration-400 mx-auto max-w-28" role="alert">
 			<span class="font-medium uppercase text-xs">Copiado!</span>
-		</div>
+		</span>
 	</footer>
 </Layout>
 <style>
