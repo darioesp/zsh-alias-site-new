@@ -1,3 +1,6 @@
+<p aling="center">
+<img src="./public/preview-site.webp" alt="Preview site site-new Function for ZSH" width="600" height="auto">
+</p>
 # ZSH Site New FUN
 
 ```bash
