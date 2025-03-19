@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Sixtyfour";
+    src: url('/fonts/SixtyfourConvergence-Regular.ttf') /* format('ttf') *//* , url('/fonts/SixtyfourConvergence-Regular.woff2') format('woff2'), url('/fonts/SixtyfourConvergence-Regular.woff') format('woff'); */;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    font-variation-settings: "BLED" 0, "SCAN" 0, "XELA" 0, "YELA" 0;
+}
